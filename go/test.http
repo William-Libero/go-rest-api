@@ -1,0 +1,30 @@
+POST http://localhost:8000/api/personalidades HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "nome": "personalidade 3",
+  "historia": "personalidade 3 historia"
+}
+###
+GET http://localhost:8000/api/personalidades HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+###
+GET http://localhost:8000/api/personalidades/4 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+###
+DELETE http://localhost:8000/api/personalidades/3 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+###
+PUT http://localhost:8000/api/personalidades/4 HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "nome": "personalidade 4",
+  "historia": "personalidade 4 historia"
+}
+###
